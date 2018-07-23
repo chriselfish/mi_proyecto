@@ -1,0 +1,241 @@
+*{
+  box-sizing: border-box;
+}
+
+body{       
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    /*header*/  
+    position: absolute; 
+    top: 0;
+    width: 100%;
+    /*padding-top: 80px;*/
+    /*height: 1900px;*/
+}
+
+/*------  header  --------*/
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  margin-bottom: :0;
+  overflow: hidden;
+  background-color:#ffffff;
+}
+
+@supports (position: sticky) {
+  body {
+    padding-top: 0;
+  }
+
+  header {
+    position: sticky;
+  }
+
+}
+
+.navbar {
+  position: relative;
+  width: 100%;
+  transition: 0.5s ease;
+  overflow: hidden;  
+}
+
+.navbar .nav {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right;
+  margin-right: 5%;
+}
+
+.navbar .nav .item {
+  list-style: none;
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px;
+  font-weight: 300;
+  line-height: 80px;
+  margin-right: 20px;
+  transition: 0.5s ease;
+}
+
+.navbar .nav .item .contact {
+  display: inline-block;  
+  height: 40px;
+  line-height: 30px;
+  padding: 5px;
+  border-radius: 2px;
+  transition: 0.5s ease;
+}
+
+.navbar .nav .item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar .logo {
+  float: left;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5%;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;  
+  transition: 0.5s ease;
+  text-align:center;
+}
+
+.navbar .logo img {
+  display: block;  
+}
+
+.text-logo {
+    line-height: 50px;
+}
+
+.scrolled {
+ transition: 0.5s ease;
+}
+
+.scrolled.navbar {
+  height: 50px; 
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease;
+
+}
+
+
+.scrolled.navbar .nav .item {
+  line-height: 40px;
+  transition: 0.5s ease;
+}
+
+.scrolled.navbar .nav .item .contact {
+  display: inline-block;
+  background-color: #ffffff;
+  height: 40px;
+  line-height: 30px;
+  padding: 5px;
+  border-radius: 2px;
+  transition: 0.5s ease;
+}
+
+/*.scrolled.navbar .logo {
+  float: left;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5%;
+  width: 40px;
+  height: 40px;
+  background-color: firebrick;
+  transition: 0.5s ease;
+}*/
+
+/*-------  banner  ----------*/ 
+.banner{
+	overflow: hidden;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.11),rgba(0, 0, 0, 0.46)), url(../img/eti.jpg);
+    background-size: contain;
+    color:#fff;
+}
+
+h1{
+font-size: 3em;
+font-family: "Courier New", Courier, monospace;
+}
+
+.banner p{
+font-size: 1.2em;
+}
+
+.full-height{
+	height: 110vh;
+
+}
+
+img{
+	width: 100%;
+}
+
+.title{
+	text-align: center;
+	font-size: 2.5em;
+	position: relative;
+}
+
+.title:after{
+    position: absolute;
+    content: "";
+    background: #B61010;
+    width: 16%;
+    height: 2px;
+    bottom: 0;
+    left: 42%;
+}
+
+.quees{
+	overflow: hidden;
+	text-align:justify;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.16),rgba(0, 0, 0, 0.46)), url(../img/gray.png);
+    color:#fff;
+}
+.conocenos{
+	padding: 2em;	
+}
+.cip{
+	overflow: hidden;
+	text-align: justify;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.16),rgba(0, 0, 0, 0.46)), url(../img/gray.png);
+	color: #fff;
+}
+ 
+ .beneficioss{
+	overflow: hidden;
+	text-align: justify;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.16),rgba(0, 0, 0, 0.46)), url(../img/gray.png);
+    background-size: cover;
+    color:#fff;
+}
+.principios{
+	overflow: hidden;
+	text-align: justify;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.16),rgba(0, 0, 0, 0.46)), url(../img/gray.png);
+    background-size: cover;
+    color:#fff;
+}
+
+.content-circle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    }
+    
+.red {
+  background: red;
+   border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 15px;
+  width: 100px;
+  text-align: center;
+  width: 1.6em; 
+  font-size: 29px;
+}
+
+
+footer{
+	padding: 1.5em 0;
+	background: #4f5f6f;
+	color:#fff;
+	text-align: center;
+	height: 8px;
+}
